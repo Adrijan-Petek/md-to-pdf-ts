@@ -1,0 +1,30 @@
+{
+  "name": "md-to-pdf-ts",
+  "version": "1.0.0",
+  "description": "Simple Markdown to PDF converter using TypeScript, markdown-it and puppeteer.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/convert.js",
+    "dev": "ts-node src/convert.ts",
+    "convert": "ts-node src/convert.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "markdown",
+    "pdf",
+    "typescript",
+    "puppeteer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-it": "^13.0.1",
+    "puppeteer": "^21.3.8"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.5.6",
+    "@types/node": "^20.4.2"
+  }
+}
